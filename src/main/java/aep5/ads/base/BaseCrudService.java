@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 @Getter
-public class BaseCrudService <ENTITY extends BaseEntity, REPOSITORY extends JpaRepository<ENTITY, Long>>{
+public class BaseCrudService <
+        ENTITY extends BaseEntity,
+        REPOSITORY extends JpaRepository<ENTITY, Long>>{
 
     @Autowired
     private REPOSITORY repository;
