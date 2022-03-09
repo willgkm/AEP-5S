@@ -1,10 +1,8 @@
-package aep5.ads.cliente;
+package aep5.ads.estabelecimento;
 
 import aep5.ads.base.BaseEntity;
 import aep5.ads.endereco.Endereco;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.CascadeType;
@@ -15,19 +13,15 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class Cliente extends BaseEntity {
+public class Estabelecimento extends BaseEntity {
 
     private String nome;
-    private String dataDeNascimento;
-
-    private Long cpf;
-    private Long telefone;
+    private String nomeFantasia;
+    private String cnpj;
     @OneToMany(cascade = CascadeType.ALL)
     private List<Endereco> enderecos;
-
-
+    private Boolean possuiEntregador;
+//    private List<MeiosDePagamento> meiosDePagamentosAceitos;
 
 
 
