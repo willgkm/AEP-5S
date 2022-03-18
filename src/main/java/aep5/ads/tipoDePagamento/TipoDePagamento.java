@@ -1,4 +1,4 @@
-package aep5.ads.Entregador;
+package aep5.ads.tipoDePagamento;
 
 import aep5.ads.base.BaseEntity;
 import lombok.AllArgsConstructor;
@@ -13,11 +13,8 @@ import javax.persistence.Entity;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Entregador extends BaseEntity {
+public class TipoDePagamento extends BaseEntity {
 
-    private String nome;
-    private String dataDeNascimento;
-    private String cpf;
-    private Boolean entregaComMoto;
-    private String CNH;
+    private String Nome;
+    private String Tipo;
 }

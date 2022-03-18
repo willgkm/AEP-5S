@@ -1,4 +1,5 @@
-package aep5.ads.Entregador;
+package aep5.ads.produto;
+
 
 import aep5.ads.base.BaseEntity;
 import lombok.AllArgsConstructor;
@@ -7,17 +8,18 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import java.math.BigDecimal;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Entregador extends BaseEntity {
+public class Produto extends BaseEntity {
 
-    private String nome;
-    private String dataDeNascimento;
-    private String cpf;
-    private Boolean entregaComMoto;
-    private String CNH;
+    private String nome ;
+    private String descricao;
+    private String Ingredientes;
+    private BigDecimal valor;
+
 }

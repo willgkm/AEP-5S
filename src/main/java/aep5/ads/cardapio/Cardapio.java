@@ -1,23 +1,29 @@
-package aep5.ads.Entregador;
+package aep5.ads.cardapio;
 
 import aep5.ads.base.BaseEntity;
+import aep5.ads.produto.Produto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Entregador extends BaseEntity {
+public class Cardapio extends BaseEntity{
 
     private String nome;
-    private String dataDeNascimento;
-    private String cpf;
-    private Boolean entregaComMoto;
-    private String CNH;
+    @OneToMany
+    private List<Produto> produtos;
+
+
+
+
+
 }
