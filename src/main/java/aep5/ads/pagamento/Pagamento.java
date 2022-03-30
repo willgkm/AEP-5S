@@ -1,6 +1,7 @@
 package aep5.ads.pagamento;
 
 import aep5.ads.base.BaseEntity;
+import aep5.ads.cliente.Cliente;
 import aep5.ads.tipoDePagamento.TipoDePagamento;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +10,7 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -20,6 +22,8 @@ import java.util.Date;
 @AllArgsConstructor
 public class Pagamento extends BaseEntity {
 
+    @OneToOne
+    private Cliente cliente;
     @OneToOne
     private TipoDePagamento Long;
     private BigDecimal valor;

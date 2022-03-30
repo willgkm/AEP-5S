@@ -10,4 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class ClienteController extends BaseCrudController<Cliente, ClienteRepository,ClienteService> {
 
 
+    @
+
 }

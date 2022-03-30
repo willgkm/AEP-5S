@@ -21,10 +21,9 @@ public class Cliente extends BaseEntity {
 
     private String nome;
     private String dataDeNascimento;
-
     private Long cpf;
     private Long telefone;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany
     private List<Endereco> enderecos;
 
 
