@@ -23,10 +23,10 @@ public class Estabelecimento extends BaseEntity {
     private String nome;
     private String nomeFantasia;
     private String cnpj;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany
     private List<Endereco> enderecos;
     private Boolean possuiEntregador;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany
     private List<TipoDePagamento> meiosDePagamentosAceitos;
 
 

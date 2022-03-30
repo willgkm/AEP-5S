@@ -34,6 +34,6 @@ public class Pedido extends BaseEntity {
     @OneToMany
     private List<Pagamento> pagamento;
     private Long avaliacao;
-    private String Reclamacao;
-
+    private String reclamacao;
+    private String observacao;
 }

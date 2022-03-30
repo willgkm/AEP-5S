@@ -21,5 +21,6 @@ public class Produto extends BaseEntity {
     private String descricao;
     private String Ingredientes;
     private BigDecimal valor;
+    private Long tempoPrevistoDeEntrega;
 
 }
