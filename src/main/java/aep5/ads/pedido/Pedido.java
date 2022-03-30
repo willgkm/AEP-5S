@@ -36,5 +36,4 @@ public class Pedido extends BaseEntity {
     private Long avaliacao;
     private String reclamacao;
     private String observacao;
-    private String tempoPrevistoDeEntrega;
 }
