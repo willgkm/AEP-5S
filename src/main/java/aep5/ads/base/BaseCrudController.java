@@ -35,7 +35,7 @@ public class BaseCrudController<
     }
 
     @PutMapping("/{id}")
-    public void atualizar(@RequestBody ENTITY entidade) {
+    public void update(@RequestBody ENTITY entidade) {
         service.updateEntity(entidade);
     }
 
