@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/tipos-de-pagamento")
 public class TipoDePagamentoController extends BaseCrudController<TipoDePagamento
-                                                    ,TIpoDePagamentoRepository
+                                                    ,TipoDePagamentoRepository
                                                     ,TipoDePagamentoService> {
 }

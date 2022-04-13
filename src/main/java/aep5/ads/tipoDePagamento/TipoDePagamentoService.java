@@ -7,5 +7,5 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional
-public class TipoDePagamentoService extends BaseCrudService<TipoDePagamento,TIpoDePagamentoRepository> {
+public class TipoDePagamentoService extends BaseCrudService<TipoDePagamento,TipoDePagamentoRepository> {
 }
